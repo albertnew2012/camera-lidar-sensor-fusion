@@ -14,7 +14,7 @@ where [Xw,Yw,Zw] denotes a point in this coordinate system, and [u, v, w] repres
 Due to the size of camera field of view (FOV), not all points will be mapped onto the image plane, thus we can track the indices of lidar points which have valid indices 
 after the camera model tranformation. 
 
-## results
+## Results
 ### project lidar points onto image
 We start with projection of lidar point cloud on to a checkerboard, which would make it straighforward to see whether the project is correct or not. The detailed implementation can be found in projectLidar2Camera, which also returns the indices of lidar points that has captured by camera. 
 <p align="middle">
@@ -32,7 +32,7 @@ image's RBG infomation with 3d lidar point cloud, by assigning the BRG values to
 <img src="result/fuse-image-with-lidar-point-cloud.png" width="640" height="341"/>
 </p>
 
-# requirements
+## Requirements
 - Open3d 
 - python-pcl  (can be installed with pip install python-pcl)
 
