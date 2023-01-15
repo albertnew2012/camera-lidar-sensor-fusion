@@ -15,6 +15,7 @@ Due to the size of camera field of view (FOV), not all points will be mapped ont
 after the camera model tranformation. 
 
 ## results
+### project lidar points onto image
 We start with projection of lidar point cloud on to a checkerboard, which would make it straighforward to see whether the project is correct or not. The detailed implementation can be found in projectLidar2Camera, which also returns the indices of lidar points that has captured by camera. 
 <p align="middle">
 <img src="data/0005.png" width="400" height="350">
@@ -23,7 +24,7 @@ We start with projection of lidar point cloud on to a checkerboard, which would 
 <img src="result/project-3D-points-onto-image.png" width="400" height="350">
 </p>
 
-### fuse camer image with 3d pcd in python
+### fuse camer image with 3d lidar point cloud in python
 Once we are able to project lidars onto image plane, then it is trivial to fuse
 image's RBG infomation with 3d lidar point cloud, by assigning the BRG values to at [u,v] on the image to 3d lidar points that fall in [u,v] pixel with Open3d.
 <p align="middle" title="esfdv">
