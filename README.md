@@ -30,6 +30,6 @@ image's RBG infomation with 3d lidar point cloud, by assigning the BRG values to
 </p>
 
 # requirements
-Open3d 
-python-pcl  (can be installed with pip install python-pcl)# camera-lidar-sensor-fusion
+- Open3d 
+- python-pcl  (can be installed with pip install python-pcl)
 
