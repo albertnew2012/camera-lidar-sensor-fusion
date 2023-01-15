@@ -17,6 +17,7 @@ after the camera model tranformation.
 ## results
 We start with projection of lidar point cloud on to a checkerboard, which would make it straighforward to see whether the project is correct or not. The detailed implementation can be found in projectLidar2Camera, which also returns the indices of lidar points that has captured by camera. 
 <p align="middle">
+<img src="data/0005.png" width="400" height="350">
 <img src="result/3d-lidar-point-cloud.png" width="400" height="350" />
 <img src="result/visualable-lidar-points-in-camera-FOV.png" width="400" height="350">
 <img src="result/project-3D-points-onto-image.png" width="400" height="350">
