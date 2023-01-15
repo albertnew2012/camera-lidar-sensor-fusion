@@ -22,6 +22,7 @@ We start with projection of lidar point cloud on to a checkerboard, which would 
 <img src="result/project-3D-points-onto-image.png" width="400" height="350">
 </p>
 
+### fuse camer image with 3d pcd in python
 Once we are able to project lidars onto image plane, then it is trivial to fuse
 image's RBG infomation with 3d lidar point cloud, by assigning the BRG values to at [u,v] on the image to 3d lidar points that fall in [u,v] pixel with Open3d.
 <p align="middle" title="esfdv">
