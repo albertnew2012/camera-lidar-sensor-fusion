@@ -24,17 +24,13 @@ We start with projection of lidar point cloud on to a checkerboard, which would 
 <img src="result/project-3D-points-onto-image.png" width="400" height="350">
 </p>
 
-### fuse camer image with 3d lidar point cloud in python
+### Fuse camera image RGB info with 3d lidar point cloud 
 Once we are able to project lidars onto image plane, then it is trivial to fuse
 image's RBG infomation with 3d lidar point cloud, by assigning the BRG values to at [u,v] on the image to 3d lidar points that fall in [u,v] pixel with Open3d.
 <p align="middle" title="esfdv">
 <img src="result/project-3D-points-onto-image-street.png" >
 <img src="result/fuse-image-with-lidar-point-cloud.png" width="640" height="341"/>
 </p>
-
-## Requirements
-- Open3d 
-- python-pcl  (can be installed with pip install python-pcl)
 
 
 ## Limitations
@@ -44,3 +40,8 @@ To demonstrate the limitation of this camera lidar fusion method, I had visualiz
 <img src="result/annotated_pcd.png" width="640" height="341"/>
 </p>
 The traffic light is properly detected,however the detection of car is very bad, becasue there is no object behind the traffic light but there is object (road surface) behind the detected car,thus any object behind the car will be misclassified as part of the car. This is the intrinsic drawback of this method. Even though its performance is not ideal, it is still meaningful as it can be used to add RGB information to 3D global lidar map along SLAM. 
+
+
+## Requirements
+- Open3d 
+- python-pcl  (can be installed with pip install python-pcl)
