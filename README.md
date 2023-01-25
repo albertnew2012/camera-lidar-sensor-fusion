@@ -1,4 +1,4 @@
-# Simple lidar camera sensor fusion 
+# lidar camera sensor fusion 
 
 This code repo is meant to demystify MATLAB function [projectLidarPointsOnImage](https://www.mathworks.com/help/lidar/ref/projectlidarpointsonimage.html) and [fuseCameraToLidar](https://www.mathworks.com/help/lidar/ref/fusecameratolidar.html) 
 using MATLAB data (camera instrics, extrinsics, image and pcd data) to achieve the exact results. The 
