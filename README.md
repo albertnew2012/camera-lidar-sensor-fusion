@@ -35,7 +35,7 @@ image's RBG infomation with 3d lidar point cloud, by assigning the BRG values to
 
 ## Limitations
 To demonstrate the limitation of this camera lidar fusion method, I had visualized the detected objects from image in point cloud domain.   
-<p align="middle" title="esfdv1">
+<p align="middle">
 <img src="result/annotated_img_.png" width="540" height="341"/>
 <img src="result/annotated_pcd.png" width="640" height="341"/>
 </p>
