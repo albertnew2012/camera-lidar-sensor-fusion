@@ -77,8 +77,8 @@ if __name__ == '__main__':
     bbox_car = [590,359,705,451]
     img = cv2.imread("data/camera-view.png")
     img_copy = np.copy(img)
-    cv2.rectangle(img_copy,bbox_traffic_light[0:2],bbox_traffic_light[2:],(0,0,255),2)
-    cv2.rectangle(img_copy,bbox_car[0:2],bbox_car[2:],(0,0,255),2)
+    cv2.rectangle(img_copy,tuple(bbox_traffic_light[0:2]),tuple(bbox_traffic_light[2:]),(0,0,255),2)
+    cv2.rectangle(img_copy,tuple(bbox_car[0:2]),tuple(bbox_car[2:]),(0,0,255),2)
     cv2.putText(img_copy,"Traffic light", (bbox_traffic_light[0],bbox_traffic_light[1]-5),0,0.5,(0,0,255))
     cv2.putText(img_copy,"car", (bbox_car[0],bbox_car[1]-5),0,0.5,(0,0,255))
     cv2.imshow("image", img_copy)
